@@ -1,0 +1,18 @@
+void
+MyDetectorConstruction::Construct
+SDandField()
+{
+	MySensitiveDetector+sensDet=new
+MySensitiveDetector("SensitiveDetector");
+	logicDetector-
+>SetSensitiveDetector(sensDet);
+
+	MyAperture*aperture=new
+MyAperture("Aperture");
+	MyAperture*aperture2=new
+MyAperture("Aperture2");
+	logicAperture-
+>SetSensitiveDetector(aperture);
+	logicAperture2-
+>SetSensitiveDetector(aperture2);
+}
